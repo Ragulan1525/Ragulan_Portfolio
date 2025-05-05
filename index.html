@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ragulan_Portfolio</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./Portfolio.png" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+    rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+</head>
+
+<body id="top" class="dark_theme">
+
+  <!-- 
+    - #HEADER
+  -->
+
+
+  <!-- Particle Background (Global for entire page) -->
+<!-- <div id="particles-js" style="
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: -1;
+pointer-events: none;
+"></div> -->
+
+
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1 class="h1 logo">
+        <a href="#">Ragulan S<span>.</span></a>
+      </h1>
+
+      <div class="navbar-actions">
+
+        <!-- <select name="language" id="lang">
+          <option value="en">En</option>
+          <option value="ar">Ar</option>
+        </select> -->
+<!-- 
+        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+          <span class="icon"></span>
+        </button> -->
+
+        
+          
+
+
+      </div>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link">Home.</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link">About.</a>
+          </li>
+
+          <li>
+            <a href="#skills" class="navbar-link">Skills.</a>
+          </li>
+
+          <li>
+            <a href="#portfolio" class="navbar-link">Projects.</a>
+          </li>
+
+          <!-- <li>
+            <a href="#education" class="navbar-link">Education.</a>
+          </li>
+-->
+          <li>
+            <a href="#experience" class="navbar-link">Experience.</a>
+          </li> 
+
+          <li>
+            <a href="#contact" class="navbar-link">Contact.</a>
+          
+          </li>
+
+          <li>
+            <a href="./assets/files/Ragulan_S_Resume.pdf" download class="navbar-link btn btn-primary">
+              Resume.
+            </a>
+          </li>
+
+            <!-- <a href="./assets/files/Ragulan_S_Resume.pdf" download class="btn btn-primary">
+              Download CV
+          </a> -->
+        
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <style> 
+  
+/* Target the resume button specifically */
+.navbar .navbar-list .navbar-link.btn-primary {
+  font-family: var(--ff-poppins); /* Apply the Roboto font */
+  font-size: your-base-font-size; /* Use the same size as other nav links */
+  color: #fff; /* Keep the white color */
+  background-color: transparent; /* Keep the transparent background */
+  border: none; /* Ensure no border */
+  border-radius: 0; /* Ensure no rounded corners */
+  text-transform: none; /* Make sure no text transform is applied */
+}
+
+.navbar .navbar-list .navbar-link.btn-primary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+}
+ </style>
+
+
+  <script>
+   document.querySelectorAll('.navbar-link').forEach(link => {
+  link.addEventListener('click', function (e) {
+    const href = this.getAttribute('href');
+
+    // Check if the link is NOT the resume link (or any other download link)
+    if (href !== './assets/files/Ragulan_S_Resume.pdf') {
+      e.preventDefault(); // Prevent default navigation for other links
+      const target = document.querySelector(href);
+      if (target) {
+        const offset = 100; // Same as scroll-margin-top
+        const y = target.getBoundingClientRect().top + window.pageYOffset - offset;
+
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    }
+    // If it IS the resume link, the browser's default download behavior
+    // due to the 'download' attribute will take over.
+  });
+});
+  </script>
+
+
+  
+
+
+
+  <main>
+    <article class="container">
+
+      <!-- 
+        - #HERO
+      -->
+
+      <!-- HERO SECTION -->
+<section class="hero" id="home" style="
+height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+position: relative;
+text-align: center;
+z-index: 2;
+padding: 0 20px;
+overflow: hidden;
+">
+
+<!-- Heading -->
+
+
+<h1 style="
+font-size: 4.5rem;
+margin-bottom: 15px;
+color: #00bfff;
+text-shadow: 3px 3px 10px rgba(0,0,0,0.8);
+white-space: nowrap;
+display: inline-block;
+">
+Hi, I'm <span style="color: #fbb034; display: inline;">Ragulan S </span>
+</h1>
+
+  <h2 style="
+    font-size: 2.2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+  ">
+    Full Stack Developer | AI Enthusiast | Problem Solver
+  </h2>
+
+  <blockquote style="
+    font-size: 1.4rem;
+    font-style: italic;
+    color: #dcdcdc;
+    margin: 20px auto;
+    max-width: 700px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  ">
+    <!-- "First, solve the problem. Then, write the code." — John Johnson -->
+    “The best way to predict the future is to invent it.” — Alan Kay
+  </blockquote>
+
+  <a href="#about" class="btn btn-primary" style="
+    background-color: #3b82f6;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    box-shadow: 0 0 10px rgba(46, 96, 175, 0.5);
+  ">
+     Explore My Journey
+  </a>
+</div>
+
+    
+
+        <ul class="hero-social-list">
+
+          <li>
+            <a href="https://www.linkedin.com/in/ragulan1525/" class="hero-social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+
+              <div class="tooltip">LinkedIn</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="mailto:raguulan@gmail.com" class="hero-social-link">
+              <ion-icon name="mail-outline"></ion-icon>
+
+              <div class="tooltip">Mail</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/Ragulan1525" class="hero-social-link">
+              <ion-icon name="logo-github"></ion-icon>
+
+              <div class="tooltip">GitHub</div>
+            </a>
+          </li>
+
+
+        </ul>
+
+        <a href="#stats" class="scroll-down">Scroll</a>
+
+      
+      </section> 
+
+
+      <div id="particles-js" style="position: absolute; top: 0; left: 0; width: 100%; height: 100vh; z-index: 0;"></div>
+
+      <script>
+        particlesJS("particles-js", {
+          particles: {
+            number: { value: 80 },
+            color: { value: "#ffffff" },
+            shape: { type: "circle" },
+            opacity: { value: 0.2 },
+            size: { value: 3 },
+            move: {
+              enable: true,
+              speed: 1,
+              direction: "none",
+              out_mode: "out"
+            }
+          },
+          interactivity: {
+            events: {
+              onhover: { enable: true, mode: "repulse" }
+            }
+          },
+          retina_detect: true
+        });
+      </script>
+      
+      
+
+
+  
+
+      <!-- 
+        - #STATS
+      -->
+
+      <!-- <section class="stats" id="stats">
+        <ul class="stats-list">
+
+          <li>
+            <a href="#" class="stats-card">
+
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-1.png" alt="Badge icon">
+              </div>
+
+              <h2 class="h2 card-title">
+                12+ <strong>Years of Experience</strong>
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+  <li>
+            <a href="/assets/files/Ragulan_S_Resume.pdf" class="navbar-link" download="Ragulan_S_Resume.pdf">Resume</a>
+          </li>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="stats-card">
+
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-2.png" alt="Checkmark icon">
+              </div>
+
+              <h2 class="h2 card-title">
+                230+ <strong>Completed Projects</strong>
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="stats-card">
+
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-3.png" alt="Peoples rating icon">
+              </div>
+
+              <h2 class="h2 card-title">
+                95+ <strong>Happy Clients</strong>
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+        </ul>
+      </section> -->
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about" id="about">
+
+        <figure class="about-banner">
+          <img src="./assets/images/Ragulan_S.jpeg" alt="A man in an alice blue shirt with a thinking expression" class="w-100">
+        </figure>
+      
+        <div class="about-content section-content">
+      
+          <p class="section-subtitle">About me</p>
+      
+          <h2 class="h3 section-title">Looking for Full Stack or Software Developer? Let’s Build Something Amazing!</h2>
+      
+          <p class="section-text">
+            Hi! I’m Ragulan S, a dedicated Full Stack Developer with hands-on experience in building web applications and AI-powered tools. I work with technologies like Python, JavaScript, and the MERN stack to create scalable and user-friendly solutions. From chatbots to house rental platforms, I enjoy solving real-world problems through clean code and practical design. I’m always eager to learn, collaborate, and contribute to innovative projects.
+          </p>
+      
+          <div class="btn-group">
+            <!-- "Hire me" Button with Mailto Link -->
+            <a href="mailto:raguuulan@gmail.com" class="btn btn-secondary">
+                Hire me
+            </a>
+            
+            <!-- "Download CV" Button with Download Link -->
+            <a href="./assets/files/Ragulan_S_Resume.pdf" download class="btn btn-primary">
+                Download CV
+            </a>
+        </div>
+        
+        </div>
+      
+      </section>
+
+      <style>
+        .about-banner img {
+          max-width: 350px; /* Increase the size further */
+          width: 100%;
+          height: auto;
+          border-radius: 50%; /* Keep circular */
+          object-fit: cover;
+          box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* More prominent shadow */
+          transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for both hover and active */
+          cursor: pointer; /* Indicates the image is interactive */
+        }
+      
+        /* Hover effect - slight zoom */
+        .about-banner img:hover {
+          transform: scale(1.1); /* Larger zoom on hover */
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Bigger shadow on hover */
+        }
+      
+        /* Active effect for touch/click - zoom and scale */
+        .about-banner img:active {
+          transform: scale(1.2); /* More zoom when touched/clicked */
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); /* Stronger shadow when clicked */
+        }
+      </style>
+      
+
+
+<!-- Skills Section -->
+
+
+
+      <section class="skills" id="skills">
+
+        <div class="skills-content section-content">
+          <p class="section-subtitle">My Skills</p>
+          <h2 class="h3 section-title">What My Programming Skills Include</h2>
+          <p class="section-text">
+            I specialize in building clean, responsive, and scalable web applications using modern technologies. Whether it's crafting seamless user interfaces or developing robust backend systems, I enjoy solving real-world problems through code. My passion lies in continuous learning and applying the right tools to deliver impactful digital solutions.
+          </p>
+        </div>
+        
+      
+        <div class="skills-box">
+          <style>
+            .skill-card img {
+              width: 50px;
+              height: auto;
+              color: #4DB33D;
+              fill: currentColor;
+            }
+            .skills-grid {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 20px;
+              padding-top: 1rem;
+            }
+            .skills-heading {
+              margin-top: 2rem;
+              font-weight: bold;
+              font-size: 1.25rem;
+              color: white;
+            }
+          </style>
+      
+          <div class="skills-heading">Programming & Frameworks</div>
+          <ul class="skills-grid">
+            <li><div class="skill-card"><div class="tooltip">Python</div><div class="card-icon"><img src="./assets/images/python.svg" alt="Python logo"></div></div></li>
+            <li><div class="skill-card"><div class="tooltip">HTML5</div><div class="card-icon"><img src="./assets/images/html5.png" alt="HTML5 logo"></div></div></li>
+            <li><div class="skill-card"><div class="tooltip">CSS3</div><div class="card-icon"><img src="./assets/images/css3.png" alt="CSS3 logo"></div></div></li>
+            <li><div class="skill-card"><div class="tooltip">JavaScript</div><div class="card-icon"><img src="./assets/images/javascript.png" alt="JavaScript logo"></div></div></li>
+            <li><div class="skill-card"><div class="tooltip">React</div><div class="card-icon"><img src="./assets/images/react.png" alt="React logo"></div></div></li>
+            <li><div class="skill-card"><div class="tooltip">MongoDB</div><div class="card-icon"><img src="./assets/images/mongodb.svg" alt="MongoDB logo"></div></div></li>
+          </ul>
+      
+          <div class="skills-heading">Developer Tools</div>
+          <ul class="skills-grid">
+            <li><div class="skill-card"><div class="tooltip">Git</div><div class="card-icon"><img src="./assets/images/git.png" alt="Git logo"></div></div></li>
+            <li><div class="skill-card"><div class="tooltip">GitHub</div><div class="card-icon"><img src="./assets/images/github.svg" alt="GitHub logo"></div></div></li>
+            <li><div class="skill-card"><div class="tooltip">Postman</div><div class="card-icon"><img src="./assets/images/postman.svg" alt="Postman logo"></div></div></li>
+            <li><div class="skill-card"><div class="tooltip">VS Code</div><div class="card-icon"><img src="./assets/images/vs-code.png" alt="VS Code logo"></div></div></li>
+            <li><div class="skill-card"><div class="tooltip">Netlify</div><div class="card-icon"><img src="./assets/images/netlify.svg" alt="Netlify logo"></div></div></li>
+            <li><div class="skill-card"><div class="tooltip">Power BI</div><div class="card-icon"><img src="./assets/images/powerbi.png" alt="Power BI logo"></div></div></li>
+            <li><div class="skill-card"><div class="tooltip">Streamlit</div><div class="card-icon"><img src="./assets/images/streamlit.svg" alt="Streamlit logo"></div></div></li>
+            <li><div class="skill-card"><div class="tooltip">Cursor</div><div class="card-icon"><img src="./assets/images/cursor.jpeg" alt="Figma logo"></div></div></li>
+            <li><div class="skill-card"><div class="tooltip">Figma</div><div class="card-icon"><img src="./assets/images/figma.svg" alt="Figma logo"></div></div></li>
+
+            <li><div class="skill-card"><div class="tooltip">Canva</div><div class="card-icon"><img src="./assets/images/canva.svg" alt="Canva logo"></div></div></li>
+          </ul>
+      
+        </div>
+      
+      </section>
+      
+
+
+      
+
+
+      <!-- 
+        - #PROJECTS
+      -->
+
+      <section class="project" id="portfolio">
+
+        <ul class="project-list">
+
+          <li>
+            <div class="project-content section-content">
+
+              <p class="section-subtitle">My Works</p>
+
+              <h2 class="h3 section-title">See My Works Which Will Amaze You!</h2>
+
+              <p class="section-text">
+                As a passionate developer focused on creating user-friendly, real-world applications. Projects like <strong>Rentify</strong> (a MERN-based rental platform) and <strong>Smart Sage Chatbot</strong> (an AI-powered study assistant) highlight my skills in full-stack development and AI. I strive to build clean, scalable, and intuitive interfaces for all users.
+              </p>
+              
+
+            </div>
+          </li>
+
+          <li class="project-item" style="
+  background-color: #1e1e1e;
+  padding: 24px;
+  border-radius: 18px;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 1000px;
+  color: #fff;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease;
+  flex-wrap: wrap;
+">
+  <!-- Left: Image -->
+  <div style="flex: 1 1 40%; min-width: 300px;">
+    <a href="https://rentify-houserent.netlify.app/" target="_blank" style="display: block;">
+      <img src="./assets/images/rentify_2.jpeg" alt="Rentify Project"
+           style="width: 100%; height: 240px; object-fit: cover; border-radius: 16px;">
+    </a>
+  </div>
+
+  <!-- Right: Description -->
+  <div style="flex: 1 1 55%; min-width: 300px;">
+    <p style="font-size: 1rem; line-height: 1.6; color: #e0e0e0; margin-top: 0;">
+      <strong>Rentify</strong> is a full-stack rental platform built with the MERN stack, offering users the ability to easily list, search, and manage properties. The platform features real-time, role-based dashboards for tenants and property owners, along with secure authentication and authorization to ensure a personalized and seamless experience.
+    </p>
+    
+    
+    
+    <a href="https://rentify-houserent.netlify.app/" target="_blank"
+       style="display: inline-block; margin-top: 12px; color: #00bfff; font-weight: bold; text-decoration: none;">
+      🔗 View Project →
+    </a>
+  </div>
+</li>
+
+<style>
+  .project-item:hover {
+    transform: scale(1.03);
+  }
+
+  .project-item a:hover img {
+    transform: scale(1.06);
+    transition: transform 0.4s ease;
+  }
+</style>
+
+          
+          
+          
+          
+          <!-- <style>
+            .project-item:hover {
+              transform: scale(1.02);
+            }
+          
+            .project-item a:hover img {
+              transform: scale(1.08);
+            }
+          
+            .project-item a:hover div {
+              opacity: 1;
+            }
+
+            .project-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+
+          </style> -->
+          
+          
+    
+
+          <!--<li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/project-2.png" class="w-100" alt="On a Blue background, a Wacom and a mouse.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Lorem Ipsum Dolor 02</h3>
+
+                <time class="publish-date" datetime="2022-04">April 2022</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/project-3.png" class="w-100"
+                  alt="A Cassette tape on a mellow apricot background.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Lorem Ipsum Dolor 03</h3>
+
+                <time class="publish-date" datetime="2022-04">April 2022</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/project-4.png" class="w-100"
+                  alt="Blue digital watch on a dark liver background.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Lorem Ipsum Dolor 04</h3>
+
+                <time class="publish-date" datetime="2022-04">April 2022</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/project-5.png" class="w-100"
+                  alt="On a dark liver background, Airport luggage car carrying a luggage.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Lorem Ipsum Dolor 05</h3>
+
+                <time class="publish-date" datetime="2022-04">April 2022</time>
+              </div>
+
+            </a>
+          </li> -->
+
+          <!-- <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/project-6.png" class="w-100"
+                  alt="On a yellow background, a digital watch and a glass.">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Lorem Ipsum Dolor 06</h3>
+
+                <time class="publish-date" datetime="2022-04">April 2022</time>
+              </div>
+
+            </a>
+          </li> -->
+
+          <li class="project-item" style="
+          background-color: #1e1e1e;
+          padding: 24px;
+          border-radius: 18px;
+          margin-bottom: 30px;
+          width: 100%;
+          max-width: 1000px;
+          color: #fff;
+          display: flex;
+          gap: 24px;
+          align-items: flex-start;
+          box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+          transition: transform 0.3s ease;
+          flex-wrap: wrap;
+        ">
+          <!-- Left: Image -->
+          <div style="flex: 1 1 40%; min-width: 300px;">
+            <a href="https://github.com/Ragulan1525/Smart-Sage" target="_blank" style="display: block;">
+              <img src="./assets/images/smart_sage.jpeg" alt="Smart Sage Chatbot Project"
+                   style="width: 100%; height: 240px; object-fit: cover; border-radius: 16px;">
+            </a>
+          </div>
+        
+          <!-- Right: Description -->
+          <div style="flex: 1 1 55%; min-width: 300px;">
+            <p style="font-size: 1rem; line-height: 1.6; color: #e0e0e0; margin-top: 0;">
+              <strong>Smart Sage Chatbot</strong> is an AI-powered educational assistant built using RAG, ChromaDB, and GPT models, designed to enhance learning and research. It provides real-time access to study materials, insightful summaries, and interactive Q&A support, offering a personalized and efficient learning experience for users.
+            </p>
+            
+            
+            <a href="https://github.com/Ragulan1525/Smart-Sage" target="_blank"
+               style="display: inline-block; margin-top: 12px; color: #00bfff; font-weight: bold; text-decoration: none;">
+              🔗 View Project →
+            </a>
+          </div>
+        </li>
+        
+        <style>
+          .project-item:hover {
+            transform: scale(1.03);
+          }
+        
+          .project-item a:hover img {
+            transform: scale(1.06);
+            transition: transform 0.4s ease;
+          }
+        </style>
+        
+        <li>
+          <a href="https://github.com/Ragulan1525" target="_blank">
+            <button class="load-more" style="padding: 16px 16px; font-size: 1.2rem;">Explore More Projects on GitHub</button>
+          </a>
+        </li>
+        
+        
+
+        </ul>
+
+      </section>
+
+
+
+      <!-- EDUCATION SECTION -->
+<section class="experience" id="education">
+  <ul class="experience-list">
+    
+    <li>
+      <div class="experience-content section-content">
+        <p class="section-subtitle">My Education</p>
+        <h2 class="h3 section-title">Academic Background</h2>
+        <p class="section-text">
+          Here's a brief overview of my educational background, highlighting the foundation of my technical and problem-solving skills.
+        </p>
+      </div>
+    </li>
+
+    <!-- College Degree -->
+    <li class="experience-item" style="
+          background-color: #1e1e1e;
+          padding: 24px;
+          border-radius: 18px;
+          margin-bottom: 30px;
+          width: 100%;
+          max-width: 1000px;
+          color: #fff;
+          display: flex;
+          gap: 24px;
+          align-items: flex-start;
+          box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+          transition: transform 0.3s ease;
+          flex-wrap: wrap;
+        ">
+      <div style="flex: 1 1 100%; min-width: 300px;">
+        <p style="font-size: 1rem; line-height: 1.6; color: #e0e0e0; margin-top: 0;">
+          <strong style="font-size: 1.2rem; color: #00bfff;">B.E. Computer Science Engineering</strong> at 
+          <strong style="font-size: 1.2rem; color: #fbb034;">MNM Jain Engineering College</strong> 
+          (Expected Graduation: 2025). 
+          <br><br>
+          My coursework included Data Structures, Web Technologies, Machine Learning, and Software Engineering. 
+          I also actively participated in technical symposiums, hackathons, and AI-based projects that enhanced my practical skills.
+        </p>
+        
+        <a href="https://mnmjainengg.com/" target="_blank" style="display: inline-block; margin-top: 12px; color: #00bfff; font-weight: bold; text-decoration: none;">
+          🎓 Visit MNM Jain College →
+        </a>
+      </div>
+    </li>
+
+  </ul>
+</section>
+<br><br>
+<br><br>
+<br><br>
+
+
+      <!-- Experience -->
+      
+
+      <section class="experience" id="experience">
+        <ul class="experience-list">
+          
+          <li>
+            <div class="experience-content section-content">
+              <p class="section-subtitle">My Experience</p>
+              <h2 class="h3 section-title">Internships & Work Experience</h2>
+              <p class="section-text">
+                I've had the opportunity to work as an intern in AI and full-stack development roles, where I gained hands-on experience in building applications that solve real-world problems. Here are some of my key internships:
+              </p>
+            </div>
+          </li>
+      
+          <!-- ADRIG AI Internship -->
+          <li class="experience-item" style="
+                background-color: #1e1e1e;
+                padding: 24px;
+                border-radius: 18px;
+                margin-bottom: 30px;
+                width: 100%;
+                max-width: 1000px;
+                color: #fff;
+                display: flex;
+                gap: 24px;
+                align-items: flex-start;
+                box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+                transition: transform 0.3s ease;
+                flex-wrap: wrap;
+              ">
+            <div style="flex: 1 1 100%; min-width: 300px;">
+              <p style="font-size: 1rem; line-height: 1.6; color: #e0e0e0; margin-top: 0;">
+                <strong style="font-size: 1.2rem; color: #00bfff;">Backend Developer Intern</strong> at 
+                <strong style="font-size: 1.2rem; color: #fbb034;">ADRIG AI Technologies</strong> 
+                (May 2024 - August 2024). I worked on a RAG-based AI project, gaining experience in backend services and data handling for intelligent systems. 
+                <!-- <br><br> -->
+                I contributed to optimizing API integrations and collaborated with senior developers to ensure scalable design practices. This role helped me sharpen my debugging, documentation, and system design skills.
+              </p>
+              
+              <a href="https://www.adrig.co.in/" target="_blank" style="display: inline-block; margin-top: 12px; color: #00bfff; font-weight: bold; text-decoration: none;">
+                🔗 Visit ADRIG AI →
+              </a>
+            </div>
+          </li>
+      
+          <!-- Edufic Digital Internship -->
+          <li class="experience-item" style="
+                background-color: #1e1e1e;
+                padding: 24px;
+                border-radius: 18px;
+                margin-bottom: 30px;
+                width: 100%;
+                max-width: 1000px;
+                color: #fff;
+                display: flex;
+                gap: 24px;
+                align-items: flex-start;
+                box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+                transition: transform 0.3s ease;
+                flex-wrap: wrap;
+              ">
+            <div style="flex: 1 1 100%; min-width: 300px;">
+              <p style="font-size: 1rem; line-height: 1.6; color: #e0e0e0; margin-top: 0;">
+                <strong style="font-size: 1.2rem; color: #00bfff;">Generative AI Intern</strong> at 
+                <strong style="font-size: 1.2rem; color: #fbb034;">Edufic Digital</strong> 
+                (July 2024 - August 2024). I worked with a variety of AI tools and contributed to creating structured documentation for internal training and tool evaluation. 
+                <!-- <br><br> -->
+                I also explored prompt engineering techniques and assisted in quality analysis of AI-generated content to ensure relevance, accuracy, and clarity for the end users.
+              </p>
+              
+              <a href="https://edufic.com/" target="_blank" style="display: inline-block; margin-top: 12px; color: #00bfff; font-weight: bold; text-decoration: none;">
+                🔗 Visit Edufic Digital →
+              </a>
+            </div>
+          </li>
+        </ul>
+      
+        <style>
+          .experience-item:hover {
+            transform: scale(1.03);
+          }
+      
+          .experience-item a:hover {
+            color: #fbb034;
+            transition: color 0.3s ease;
+          }
+        </style>
+      </section>
+      
+      <br><br>
+      <br><br>
+      <br><br>
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="contact" id="contact">
+
+        <div class="contact-content section-content">
+
+          <p class="section-subtitle">Contact</p>
+
+          <h2 class="h3 section-title">Have a Project or Opportunity? Let's Connect</h2>
+
+          <p class="section-text">
+            I'm a passionate developer eager to collaborate on exciting ideas and career opportunities. Feel free to reach out—I'd love to hear from you and discuss how I can contribute.
+          </p>
+
+          <ul class="contact-list">
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Address:</h3>
+
+                <address class="contact-info">
+                  Chennai, Tamil Nadu, India
+                </address>
+              </div>
+
+            </li>
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Phone:</h3>
+
+                <a href="tel:01234567789" class="contact-info">+91 8056229817</a>
+
+                <a href="tel:09765432200" class="contact-info">+91 8056229617</a>
+              </div>
+
+            </li>
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Email:</h3>
+
+                <a href="mailto:info@jack.com" class="contact-info">raguulan@gmail.com</a>
+
+                <!-- <a href="mailto:support@jack.com" class="contact-info">support@jack.com</a> -->
+              </div>
+
+            </li>
+
+            <li>
+              <ul class="contac-social-list">
+
+                <!-- <li>
+                  <a href="#" class="contact-social-link">
+                    <div class="tooltip">Facebook</div>
+
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li> -->
+
+                <!-- <li>
+                  <a href="#" class="contact-social-link">
+                    <div class="tooltip">Twitter</div>
+
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li> -->
+
+                <li>
+                  <a href="mailto:raguulan@gmail.com" class="contact-social-link">
+                    <div class="tooltip">Email</div>
+                    <ion-icon name="mail-outline"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.linkedin.com/in/ragulan1525/" class="contact-social-link" target="_blank">
+                    <div class="tooltip">LinkedIn</div>
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+                
+                <li>
+                  <a href="https://github.com/Ragulan1525" class="contact-social-link" target="_blank">
+                    <div class="tooltip">GitHub</div>
+                    <ion-icon name="logo-github"></ion-icon> <!-- Correct icon -->
+                  </a>
+                </li>
+                
+                <li>
+                  <a href="https://www.instagram.com/rocky_ragulan/" class="contact-social-link" target="_blank">
+                    <div class="tooltip">Instagram</div>
+                    <ion-icon name="logo-instagram"></ion-icon> <!-- Correct icon -->
+                  </a>
+                </li>
+                
+
+              </ul>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+
+        <form action="https://formspree.io/f/xqaqprbw" method="POST" class="contact-form" onsubmit="showSuccessMessage(event)">
+
+
+          <div class="form-wrapper">
+
+            <label for="name" class="form-label">Name</label>
+
+            <div class="input-wrapper">
+
+              <input type="text" name="name" id="name" required placeholder="e.g Ragulan S" class="input-field">
+
+              <ion-icon name="person-circle"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="email" class="form-label">Email</label>
+
+            <div class="input-wrapper">
+
+              <input type="email" name="email" id="email" required placeholder="e.g Ragulan@gmail.com"
+                class="input-field">
+
+              <ion-icon name="mail"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="phone" class="form-label">Phone</label>
+
+            <div class="input-wrapper">
+
+              <input type="tel" name="phone" id="phone" required placeholder="Phone Number" class="input-field">
+
+              <ion-icon name="call"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="message" class="form-label">Message</label>
+
+            <div class="input-wrapper">
+
+              <textarea name="message" id="message" required placeholder="Write message..."
+                class="input-field"></textarea>
+
+              <ion-icon name="chatbubbles"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send</button>
+
+        </form>
+
+        <!-- Success Message Container -->
+<div id="success-message" style="display: none; padding: 10px; background-color: #4CAF50; color: white; border-radius: 5px; margin-top: 10px;">
+  <strong>Success!</strong> Your message has been sent successfully.
+</div>
+
+<script>
+  function showSuccessMessage(event) {
+    event.preventDefault(); // Prevent the form from submitting the usual way
+
+    // Display the success message
+    document.getElementById("success-message").style.display = "block";
+
+    // Optionally, hide the form
+    document.querySelector(".contact-form").reset();
+    
+    // Optionally, hide success message after a few seconds
+    setTimeout(function() {
+      document.getElementById("success-message").style.display = "none";
+    }, 5000); // Hide after 5 seconds
+  }
+</script>
+
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+      <p class="h1 logo">
+        <a href="#">
+          Ragulan S<span>.</span>
+        </a>
+      </p>
+  
+      <p class="copyright">
+        &copy; 2025 <a href="https://www.linkedin.com/in/ragulan1525/">Ragulan S</a>. All rights reserved
+      </p>
+    </div>
+  </footer>
+  
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top title="Go to Top">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+<!-- 
+  Custom Dot Cursor with Trail Glow 
+-->
+<div class="custom-dot-cursor"></div>
+
+<style>
+  /* Hide default cursor */
+  body {
+    cursor: none;
+  }
+
+  /* Dot Cursor Style */
+  .custom-dot-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: #01c0ff;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    box-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff;
+    transition: transform 0.1s ease-out;
+    mix-blend-mode: difference;
+  }
+
+  /* Optional hover effect for links/buttons */
+  .custom-dot-cursor.hovered {
+    transform: scale(2);
+    background-color: rgba(0, 191, 255, 0.3);
+    box-shadow: 0 0 20px #00bfff, 0 0 40px #00bfff;
+  }
+</style>
+
+<script>
+  const dotCursor = document.querySelector('.custom-dot-cursor');
+
+  document.addEventListener('mousemove', (e) => {
+    dotCursor.style.transform = `translate(${e.clientX - 5}px, ${e.clientY - 5}px)`;
+  });
+
+  // Hover effect on interactive elements
+  const interactiveEls = document.querySelectorAll(
+    'a, button, .navbar-link, .experience-item, .education-item'
+  );
+
+  interactiveEls.forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      dotCursor.classList.add('hovered');
+    });
+    el.addEventListener('mouseleave', () => {
+      dotCursor.classList.remove('hovered');
+    });
+  });
+</script>
+
+
+
+</body>
+
+</html>
