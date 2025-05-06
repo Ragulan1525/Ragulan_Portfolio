@@ -69,6 +69,26 @@
 
 
 
+  /* By default, show desktop heading and hide mobile */
+  .desktop-heading {
+    display: block;
+  }
+
+  .mobile-heading {
+    display: none;
+  }
+
+  /* On small screens (e.g. <= 768px), reverse visibility */
+  @media screen and (max-width: 425px) {
+    .desktop-heading {
+      display: none;
+    }
+
+    .mobile-heading {
+      display: block;
+    }
+  }
+
 
 /*-----------------------------------*\
  * #THEME COLORS
@@ -1336,3 +1356,6 @@ textarea.input-field {
   .about-banner { max-width: 450px; }
 
 }
+
+
+
