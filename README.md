@@ -14,7 +14,7 @@ I am a Computer Science Engineering student passionate about Full Stack Developm
 
 Check out the live version of my portfolio here:  
 👉 [Live Demo] (https://ragulan.netlify.app/)
-> *(Replace with your actual portfolio URL once deployed)*
+
 
 ---
 
@@ -22,9 +22,9 @@ Check out the live version of my portfolio here:
 
 | Homepage | Projects Section |
 |----------|------------------|
-| ![Home](screenshots/homepage.png) | ![Projects](screenshots/projects.png) |
+| ![Home](Screenshots/HomePage.jpeg) | ![About](Screenshots/AboutPage.jpeg) | ![Projects](Screenshots/ProjectPage.jpeg) | 
 
-> *(Place your screenshots inside a `screenshots/` folder in the repo and name them accordingly)*
+
 
 ---
 
