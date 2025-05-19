@@ -30,8 +30,8 @@ Check out the live version of my portfolio here:
 
 ## 📸 Screenshots
 
-| Homepage | Projects Section |
-|----------|------------------|
+| Homepage | About Section | Projects Section |
+|----------|---------------|------------------|
 | ![Home](Screenshots/HomePage.jpeg) | ![About](Screenshots/AboutPage.jpeg) | ![Projects](Screenshots/ProjectPage.jpeg) |
 
 ---
