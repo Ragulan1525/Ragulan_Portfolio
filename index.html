@@ -128,47 +128,117 @@ pointer-events: none;
   </header>
 
 
-  <style> 
-  
-/* Target the resume button specifically */
-.navbar .navbar-list .navbar-link.btn-primary {
-  font-family: var(--ff-poppins); /* Apply the Roboto font */
-  font-size: your-base-font-size; /* Use the same size as other nav links */
-  color: #fff; /* Keep the white color */
-  background-color: transparent; /* Keep the transparent background */
-  border: none; /* Ensure no border */
-  border-radius: 0; /* Ensure no rounded corners */
-  text-transform: none; /* Make sure no text transform is applied */
-}
+  <style>
+    /* Header container */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 68px;
+      background-color: transparent;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    /* When page is scrolled */
+    .header.scrolled {
+      background-color: #2c2c2e;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    }
+    
+    /* Layout container */
+    .header .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 40px;
+    }
+    
+    /* Logo styling */
+    .logo a {
+      font-size: 35px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #fff;
+    }
+    
+    .logo span {
+      color: #ff8c20; /* Optional highlight on dot */
+    }
+    
+    /* Navbar list */
+    .navbar-list {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Navbar links */
+    .navbar-link {
+      font-family: var(--ff-poppins, sans-serif);
+      font-size: 16px;
+      text-decoration: none;
+      color: #fff;
+      transition: color 0.3s ease;
+    }
+    
+    .navbar-link:hover {
+      color: #ff7b00;
+    }
+    
+    /* Resume button styled like other links */
+    .navbar .navbar-list .navbar-link.btn-primary {
+      font-family: var(--ff-poppins, sans-serif);
+      font-size: 18px;
+      color: #fff;
+      background-color: transparent;
+      border: none;
+      border-radius: 0;
+      text-transform: none;
+    }
+    
+    .navbar .navbar-list .navbar-link.btn-primary:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      transform: scale(1.05);
+    }
+    </style>
 
-.navbar .navbar-list .navbar-link.btn-primary:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  transform: scale(1.05);
-}
- </style>
 
+<script>
+  document.querySelectorAll('.navbar-link').forEach(link => {
+    link.addEventListener('click', function (e) {
+      // Allow default behavior if the link has the download attribute
+      if (this.hasAttribute('download')) return;
 
-  <script>
-   document.querySelectorAll('.navbar-link').forEach(link => {
-  link.addEventListener('click', function (e) {
-    const href = this.getAttribute('href');
-
-    // Check if the link is NOT the resume link (or any other download link)
-    if (href !== './assets/files/Ragulan_S_Resume.pdf') {
-      e.preventDefault(); // Prevent default navigation for other links
+      const href = this.getAttribute('href');
       const target = document.querySelector(href);
       if (target) {
-        const offset = 100; // Same as scroll-margin-top
+        e.preventDefault(); // Prevent default navigation
+        const offset = 100;
         const y = target.getBoundingClientRect().top + window.pageYOffset - offset;
-
         window.scrollTo({ top: y, behavior: 'smooth' });
       }
-    }
-    // If it IS the resume link, the browser's default download behavior
-    // due to the 'download' attribute will take over.
+    });
   });
-});
-  </script>
+
+  window.addEventListener('scroll', function () {
+    const header = document.querySelector('.header');
+    if (window.scrollY > 10) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+</script>
+
 
 
   
