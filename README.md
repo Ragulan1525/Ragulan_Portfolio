@@ -76,7 +76,7 @@ A full-stack MERN app simplifying property listings and rental processes with ad
 
 ## 📫 Contact Me
 
-- **Email**: ragulan.dev1525@gmail.com  
+- **Email**: raguulan@gmail.com  
 - **LinkedIn**: [linkedin.com/in/ragulan1525](https://linkedin.com/in/ragulan1525)  
 - **GitHub**: [github.com/Ragulan1525](https://github.com/Ragulan1525)  
 
