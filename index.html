@@ -112,7 +112,7 @@ pointer-events: none;
           </li>
 
           <li>
-            <a href="./assets/files/Ragulan_S_Resume.pdf" download class="navbar-link btn btn-primary">
+            <a href="./assets/files/Ragulan_S_resume.pdf" download class="navbar-link btn btn-primary">
               Resume.
             </a>
           </li>
@@ -446,7 +446,7 @@ white-space: normal;">
             </a>
             
             <!-- "Download CV" Button with Download Link -->
-            <a href="./assets/files/Ragulan_S_Resume.pdf" download class="btn btn-primary">
+            <a href="./assets/files/Ragulan_S_resume.pdf" download class="btn btn-primary">
                 Download CV
             </a>
         </div>
@@ -1071,92 +1071,93 @@ white-space: normal;">
 
 
 
-        <form action="https://formspree.io/f/xqaqprbw" method="POST" class="contact-form" onsubmit="showSuccessMessage(event)">
+     <form action="https://formspree.io/f/xqaqprbw" method="POST" class="contact-form">
+  <div class="form-wrapper">
+    <label for="name" class="form-label">Name</label>
+    <div class="input-wrapper">
+      <input type="text" name="name" id="name" required placeholder="e.g Ragulan S" class="input-field">
+      <ion-icon name="person-circle"></ion-icon>
+    </div>
+  </div>
 
+  <div class="form-wrapper">
+    <label for="email" class="form-label">Email</label>
+    <div class="input-wrapper">
+      <input type="email" name="email" id="email" required placeholder="e.g Ragulan@gmail.com" class="input-field">
+      <ion-icon name="mail"></ion-icon>
+    </div>
+  </div>
 
-          <div class="form-wrapper">
+  <div class="form-wrapper">
+    <label for="phone" class="form-label">Phone</label>
+    <div class="input-wrapper">
+      <input type="tel" name="phone" id="phone" required placeholder="Phone Number" class="input-field">
+      <ion-icon name="call"></ion-icon>
+    </div>
+  </div>
 
-            <label for="name" class="form-label">Name</label>
+  <div class="form-wrapper">
+    <label for="message" class="form-label">Message</label>
+    <div class="input-wrapper">
+      <textarea name="message" id="message" required placeholder="Write message..." class="input-field"></textarea>
+      <ion-icon name="chatbubbles"></ion-icon>
+    </div>
+  </div>
 
-            <div class="input-wrapper">
+  <button type="submit" class="btn btn-primary">Send</button>
+</form>
 
-              <input type="text" name="name" id="name" required placeholder="e.g Ragulan S" class="input-field">
-
-              <ion-icon name="person-circle"></ion-icon>
-
-            </div>
-
-          </div>
-
-          <div class="form-wrapper">
-
-            <label for="email" class="form-label">Email</label>
-
-            <div class="input-wrapper">
-
-              <input type="email" name="email" id="email" required placeholder="e.g Ragulan@gmail.com"
-                class="input-field">
-
-              <ion-icon name="mail"></ion-icon>
-
-            </div>
-
-          </div>
-
-          <div class="form-wrapper">
-
-            <label for="phone" class="form-label">Phone</label>
-
-            <div class="input-wrapper">
-
-              <input type="tel" name="phone" id="phone" required placeholder="Phone Number" class="input-field">
-
-              <ion-icon name="call"></ion-icon>
-
-            </div>
-
-          </div>
-
-          <div class="form-wrapper">
-
-            <label for="message" class="form-label">Message</label>
-
-            <div class="input-wrapper">
-
-              <textarea name="message" id="message" required placeholder="Write message..."
-                class="input-field"></textarea>
-
-              <ion-icon name="chatbubbles"></ion-icon>
-
-            </div>
-
-          </div>
-
-          <button type="submit" class="btn btn-primary">Send</button>
-
-        </form>
-
-        <!-- Success Message Container -->
+<!-- Success Message -->
 <div id="success-message" style="display: none; padding: 10px; background-color: #4CAF50; color: white; border-radius: 5px; margin-top: 10px;">
   <strong>Success!</strong> Your message has been sent successfully.
 </div>
 
+<!-- Error Message -->
+<div id="error-message" style="display: none; padding: 10px; background-color: #f44336; color: white; border-radius: 5px; margin-top: 10px;">
+  <strong>Error!</strong> Something went wrong. Please try again later.
+</div>
+
+<!-- Script for handling form submission -->
 <script>
-  function showSuccessMessage(event) {
-    event.preventDefault(); // Prevent the form from submitting the usual way
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector(".contact-form");
+    const successMsg = document.getElementById("success-message");
+    const errorMsg = document.getElementById("error-message");
 
-    // Display the success message
-    document.getElementById("success-message").style.display = "block";
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      const formData = new FormData(form);
 
-    // Optionally, hide the form
-    document.querySelector(".contact-form").reset();
-    
-    // Optionally, hide success message after a few seconds
-    setTimeout(function() {
-      document.getElementById("success-message").style.display = "none";
-    }, 5000); // Hide after 5 seconds
-  }
+      fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          successMsg.style.display = "block";
+          errorMsg.style.display = "none";
+          form.reset();
+          setTimeout(() => {
+            successMsg.style.display = "none";
+          }, 5000);
+        } else {
+          successMsg.style.display = "none";
+          errorMsg.style.display = "block";
+        }
+      }).catch(error => {
+        successMsg.style.display = "none";
+        errorMsg.style.display = "block";
+      });
+    });
+  });
 </script>
+
+<!-- Add this to use ion-icons if not already included -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 
       </section>
 
@@ -1203,28 +1204,24 @@ white-space: normal;">
 
   <!-- 
     - custom js link
-  -->
+
   <script src="./assets/js/script.js"></script>
 
-  <!-- 
-    - ionicon link
-  -->
+
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 
-<!-- 
-  Custom Dot Cursor with Trail Glow 
--->
+
 <div class="custom-dot-cursor"></div>
 
 <style>
-  /* Hide default cursor */
+
   body {
     cursor: none;
   }
 
-  /* Dot Cursor Style */
+
   .custom-dot-cursor {
     position: fixed;
     top: 0;
@@ -1240,7 +1237,7 @@ white-space: normal;">
     mix-blend-mode: difference;
   }
 
-  /* Optional hover effect for links/buttons */
+
   .custom-dot-cursor.hovered {
     transform: scale(2);
     background-color: rgba(0, 191, 255, 0.3);
@@ -1255,7 +1252,6 @@ white-space: normal;">
     dotCursor.style.transform = `translate(${e.clientX - 5}px, ${e.clientY - 5}px)`;
   });
 
-  // Hover effect on interactive elements
   const interactiveEls = document.querySelectorAll(
     'a, button, .navbar-link, .experience-item, .education-item'
   );
@@ -1269,7 +1265,62 @@ white-space: normal;">
     });
   });
 </script>
+-->
 
+
+<div class="custom-cursor"></div>
+
+<style> body {
+  cursor: none; /* Hide default cursor */
+}
+
+/* Custom arrow cursor */
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out;
+}
+
+.custom-cursor::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 10px solid #00bfff;  /* arrow color */
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  animation: spinArrow 1s infinite linear;
+}
+
+/* Animation for arrow spin */
+@keyframes spinArrow {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+</style>
+
+<script>
+  const cursor = document.querySelector('.custom-cursor');
+
+  document.addEventListener('mousemove', (e) => {
+    cursor.style.top = e.clientY + 'px';
+    cursor.style.left = e.clientX + 'px';
+  });
+</script>
 
 
 </body>
