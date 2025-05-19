@@ -1,112 +1,87 @@
-# 💼 Ragulan S – Developer Portfolio
+# 💼 Ragulan S - Developer Portfolio
 
-Welcome to my **Developer Portfolio** repository! This space highlights my academic and personal projects, technical skills, certifications, and accomplishments in the field of **Computer Science & Software Development**.
+Welcome to my developer portfolio! This repository highlights my key projects, technical skills, and experiences as a passionate software developer.
 
 ---
 
 ## ℹ️ Introduction
 
-Hi, I'm **Ragulan S**, a highly motivated and curious Computer Science Engineering student with a keen interest in solving real-world problems through technology. I specialize in **Full Stack Web Development**, **Artificial Intelligence**, and **DevOps** practices.
-
-Over the past few years, I’ve worked on several academic and personal projects that demonstrate my ability to combine creativity and logic to build effective digital solutions. Whether it’s creating a smart AI chatbot using **RAG architecture** or designing a user-friendly web app from scratch, I enjoy building products that make an impact.
+Hi, I’m **Ragulan S**, a Computer Science Engineering student focused on building impactful web applications and intelligent software solutions. This portfolio showcases my work in Full Stack Development and Artificial Intelligence, demonstrating my practical skills through real-world projects.
 
 ---
 
-## 👨‍💻 About Me
+## 🔍 About This Portfolio
 
-- 🎓 **Current Status**: Final-year B.E. Computer Science student at **MNM Jain Engineering College**
-- 🌱 **Learning Goals**: Exploring more about **AI/ML**, **System Design**, and **Cloud Computing**
-- 🛠 **Development Interests**:
-  - Creating full-stack applications with modern frameworks
-  - Building AI-powered tools for productivity and learning
-  - Automating tasks using Python and scripting tools
-- 💡 **What Drives Me**: A deep passion for continuous learning, collaborating with like-minded people, and using technology to improve lives.
-- 🤝 **Looking For**: Internship or full-time roles as a **Full Stack Developer** or **AI Engineer** where I can apply my knowledge and grow further
+This portfolio features:
+
+- A selection of personal and academic projects that highlight my expertise in MERN stack, Python-based AI, and frontend development.
+- Detailed descriptions and live demos to explore my work.
+- My technical skills, tools, and certifications that back my development journey.
+- Achievements and internships that reflect my commitment to continuous learning.
 
 ---
 
-## 🌐 Live Portfolio
+## 🔗 Live Demo
 
-✨ Explore my live portfolio website here:  
-👉 [https://ragulan.netlify.app](https://ragulan.netlify.app)
+Check out the live version of my portfolio here:  
+👉 [Live Demo](https://ragulan.netlify.app/)
 
 ---
 
-## 🖼️ Screenshots
+## 📸 Screenshots
 
-| Home Page | About Page | Projects Page |
-|-----------|------------|----------------|
+| Homepage | Projects Section |
+|----------|------------------|
 | ![Home](Screenshots/HomePage.jpeg) | ![About](Screenshots/AboutPage.jpeg) | ![Projects](Screenshots/ProjectPage.jpeg) |
 
 ---
 
-## 🛠️ Tech Stack & Skills
+## 🛠️ Skills
 
-- **Programming Languages**: Python, JavaScript, C, C++
-- **Frontend**: HTML5, CSS3, Tailwind CSS, React.js
-- **Backend**: Node.js, Express.js, Flask, FastAPI
-- **Databases**: MongoDB, MySQL, ChromaDB
-- **AI/ML**: TensorFlow, Scikit-Learn, Sentence Transformers, RAG-based Retrieval
-- **DevOps & Tools**: Git, GitHub, Docker, Postman, Power BI, Streamlit
-
----
-
-## 🚀 Featured Projects
-
-### 📌 Smart Sage – AI Study Assistant Chatbot
-An educational chatbot built using Retrieval-Augmented Generation (RAG) to deliver smart and concise academic answers.
-
-- 🔧 Tech Used: FastAPI, ChromaDB, OpenAI GPT, Streamlit
-- 🔍 Features: Semantic search, voice input, dark mode, chat memory, PDF/document ingestion
-
-### 📌 Soft Skill Enhancement Platform
-A web platform designed to help students improve English communication, vocabulary, and pronunciation through interactive modules.
-
-- 🛠 Tech Stack: HTML, CSS, JavaScript
-- 🎯 Features: Role-based login, admin dashboard, progress tracking, quizzes
-
-### 📌 Rentify – House Renting Web App
-A full-featured MERN stack application to list and manage rental properties, designed for both renters and property owners.
-
-- 💻 Built With: MongoDB, Express.js, React.js, Node.js
-- 👥 Features: Admin controls, property approvals, user authentication
+- **Languages**: Python, JavaScript, C, C++  
+- **Frameworks & Tools**: React, Node.js, Express.js, Flask, Tailwind CSS, FastAPI, Docker  
+- **Databases**: MongoDB, MySQL, ChromaDB  
+- **AI/ML**: TensorFlow, Scikit-Learn, Sentence Transformers, RAG-based Retrieval  
+- **Others**: Git, GitHub, Postman, Power BI, Streamlit  
 
 ---
 
-## 🏆 Achievements & Experience
+## 🌟 Featured Projects
 
-- 🥈 **2nd Place – Hexaware Hackathon**  
-  Won ₹25,000 cash prize for presenting an innovative soft skill learning platform.
+### 🔹 Smart Sage – AI Study Assistant Chatbot  
+A Retrieval-Augmented Generation (RAG) chatbot providing educational answers using semantic search over documents, Wikipedia, and APIs.
 
-- 💼 **AI Intern – Edufic Digital**  
-  Worked on content generation and applied AI for real-time applications.
+- Built with: FastAPI, ChromaDB, OpenAI, Streamlit  
+- Features: Voice input, Dark Mode, Chat history, PDF/Text ingestion  
 
-- 💼 **Full Stack Developer Intern – ADRIG AI Technologies**  
-  Developed and deployed a production-ready RAG-based chatbot using FastAPI and ChromaDB.
+### 🔹 Soft Skill Enhancement App  
+An interactive platform to improve English communication skills through vocabulary lessons, pronunciation tests, and role-based dashboards.
 
----
+- Built with: HTML, CSS, JavaScript  
+- Features: Role-based login, progress tracking, admin panel  
 
-## 🎓 Certifications
-
-- ✅ MongoDB Developer Path – SmartBridge  
-- ✅ DevOps Essentials – IBM SkillsBuild  
-- ✅ Power BI – ICT Academy  
-- ✅ The Fundamentals of Digital Marketing – Google  
-- ✅ Network Essentials – Cisco  
-- ✅ C Programming – Spoken Tutorial, IIT Bombay
+### 🔹 Rentify – House Renting Platform  
+A full-stack MERN app simplifying property listings and rental processes with admin controls and user authentication.
 
 ---
 
-## 📬 Contact
+## 🏆 Achievements
 
-- 📧 Email: [ragulan.dev1525@gmail.com](mailto:ragulan.dev1525@gmail.com)  
-- 💼 LinkedIn: [linkedin.com/in/ragulan1525](https://linkedin.com/in/ragulan1525)  
-- 🖥️ GitHub: [github.com/Ragulan1525](https://github.com/Ragulan1525)
+- 🥈 2nd Place – Hexaware Hackathon (Cash prize: ₹25,000)  
+- 🎓 AI Internship – Edufic Digital  
+- 🎓 Full Stack Developer Internship – ADRIG AI Technologies  
+- 🧠 Certified in MongoDB, Power BI, Digital Marketing  
+
+---
+
+## 📫 Contact Me
+
+- **Email**: ragulan.dev1525@gmail.com  
+- **LinkedIn**: [linkedin.com/in/ragulan1525](https://linkedin.com/in/ragulan1525)  
+- **GitHub**: [github.com/Ragulan1525](https://github.com/Ragulan1525)  
 
 ---
 
-## 📌 Note
+### 📌 Note
 
-> This portfolio is continuously evolving as I explore new tech and take on exciting projects. Stay tuned for more updates!
-
----
+This portfolio is actively updated with new projects and skills as I grow as a developer.
